@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Condensed&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+/* set up the body */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: 0.25em solid black;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: peru;
+    border: 0.25em solid rgb(15, 15, 15);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: #f1f1f1 peru;
+        scrollbar-width: thin;
+    }
+}
