@@ -100,3 +100,22 @@ select {
         scrollbar-width: thin;
     }
 }
+
+main {
+    background-color: cornsilk;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mc_embed_signup {
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 800px;
+    background: lightblue;
+}
+
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
