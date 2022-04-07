@@ -108,17 +108,41 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/Endsars.png), url(../assets/danfo.png), url(../assets/filahausa.png), url(../assets/gangan.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: right top, right bottom, left top, left bottom;
+
+}
+
+.main-innter {
+    padding: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Endsars.png),
+        url(../assets/danfo.png),
+        url(../assets/filahausa.png),
+        url(../assets/gangan.png),
+        url(../assets/mado.png),
+        url(../assets/igbocap.png);
+    background-repeat: no-repeat;
+    background-position: right top,
+        right bottom,
+        left top,
+        left bottom,
+        center left,
+        center right;
+    background-size: 150px;
+
 }
 
 #mc_embed_signup {
     font-family: "Montserrat", sans-serif;
     clear: left;
     width: 600px;
-    background: lightblue;
-    padding: 20px;
+ 
+    padding: 10px;
 }
 
 #mc_embed_signup_scroll {
@@ -148,5 +172,57 @@ main {
 }
 
 
-/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+    .logo {
+        width: 200px;
+        height: 150px;
+    }
+
+    main {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #mc_embed_signup {
+        font-family: "Montserrat", sans-serif;
+        clear: left;
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem;
+    }
+
+    .main-innter {
+        padding: 3px;
+    background-image: none;
+       
+    
+    }
+}
+
+.year {
+    color: orangered;
+    font-weight: 900;
+}
+
+.copyright {
+    text-align: center;
+    padding: 3px;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.designer {
+    font-family: "Montserrat",
+    sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: orangered;
+    font-weight: 900;
+}
+
+
