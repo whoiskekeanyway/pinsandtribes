@@ -108,10 +108,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/Endsars.png), url(../assets/danfo.png), url(../assets/filahausa.png), url(../assets/gangan.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right bottom, left top, left bottom;
 }
 
 #mc_embed_signup {
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     clear: left;
     width: 600px;
     background: lightblue;
@@ -132,9 +135,10 @@ main {
     font-weight: 400;
 
 }
-.subtitle { 
+
+.subtitle {
     font-weight: 700;
- 
+
 }
 
 .logo {
